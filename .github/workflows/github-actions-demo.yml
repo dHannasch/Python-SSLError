@@ -1,5 +1,5 @@
 name: GitHub Actions Demo
-run-name: Python-SSLError
+run-name: Run Python fetch and get SSLError
 on: [push]
 jobs:
   Python-SSLError:
