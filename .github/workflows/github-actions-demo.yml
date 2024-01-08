@@ -14,6 +14,6 @@ jobs:
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
-        run: |
-          ls
+        run: ls root_cert.pem
+      - run: echo "root_cert.pem was obtained by openssl s_client -connect www.google.com:443 -showcerts."
       - run: echo "🍏 This job's status is ${{ job.status }}."
